@@ -72,9 +72,9 @@ AC_CONFIG_SUBDIRS([engine])
 
 BT_REQUIRE_LIBXML2
 
-ENGINE_CPPFLAGS="-I\${top_builddir}/engine -I\${top_builddir}/engine/sdk/include -I\${top_builddir}/engine/sdk/include/OGRE -I\${top_builddir}/sdk/include/OGRE/Overlay -I\${top_builddir}/engine/sdk/include/bullet -F\${top_builddir}/engine/sdk/Frameworks"
+ENGINE_CPPFLAGS="-I\${top_builddir}/engine/libjyuzau -I\${top_builddir}/engine/sdk/include -I\${top_builddir}/engine/sdk/include/OGRE -I\${top_builddir}/sdk/include/OGRE/Overlay -I\${top_builddir}/engine/sdk/include/bullet -F\${top_builddir}/engine/sdk/Frameworks"
 ENGINE_LDFLAGS="-L\${top_builddir}/engine/sdk/lib -F\${top_builddir}/engine/sdk/Frameworks"
-ENGINE_LIBS="\${top_builddir}/engine/jyuzau/libjyuzau.la -framework Cocoa -framework Foundation"
+ENGINE_LIBS="\${top_builddir}/engine/libjyuzau/libjyuzau.la -framework Cocoa -framework Foundation"
 
 AC_SUBST([ENGINE_CPPFLAGS])
 AC_SUBST([ENGINE_LDFLAGS])
